@@ -5,3 +5,7 @@
 #include <string.h>
 #include <fcntl.h>
 #include <stdlib.h>
+
+void err_exit(char *s) {
+    //
+}
