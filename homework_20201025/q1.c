@@ -30,7 +30,7 @@ int main() {
     *tmp = 0xff;
     *(tmp + 1) = 0xff;
     *(tmp + 2) = 0x7f;
-    *(tmp + 3) = 0x7f;
+    *(tmp + 3) = 0x7f; //0 11111110 1111111 1111 1111 1111 1111
 
     printf("\n&f = %x", &float_n);
 	printf("\n最大float： f = %f", float_n);
