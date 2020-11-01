@@ -34,6 +34,8 @@ int main() {
             case 4:
                 randdat();
                 break;
+            default:
+                break;
         }
     }
     return 0;
