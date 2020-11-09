@@ -1,0 +1,7 @@
+dlib.c
+$ gcc -Wall -shared dlib.c -o libdlib.so
+
+$ sudo cp ./*.so /usr/lib
+
+test_dlib.c
+$ gcc -Wall test_dlib.c -o test_dlib -L ./ -ldlib
