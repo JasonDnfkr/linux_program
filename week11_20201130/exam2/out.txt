@@ -1,0 +1,10 @@
+process child21 pid:1201  exittime is Mon Nov 30 16:57:07 2020
+
+process child2 pid:1197  exittime is Mon Nov 30 16:57:07 2020
+
+process child11 pid:1202  exittime is Mon Nov 30 16:57:07 2020
+
+process child1 pid:1196  exittime is Mon Nov 30 16:57:07 2020
+
+process parent pid:1195  exittime is Mon Nov 30 16:57:07 2020
+

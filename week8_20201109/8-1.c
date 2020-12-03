@@ -1,31 +1,32 @@
-#include "ch07.h"
-#include <string.h>
+#include "./ch08.h"
 
-int to_int(char *str) {
-    int n = 0;
-    int cnt = 1;
-    int len = strlen(str);
-    for (int i = len - 1; i >= 0; i--) {
-        n += (str[i] - '0') * cnt;
-        cnt *= 10;
-    }
+static int g = 100, k;
 
-    printf("aa: %d\n", n);
-
-    return n;
+void fun() {
+    int x;
+    int y;
+    int *p = (int *)malloc(sizeof(int));
+    printf("fun: address of x = %x, y = %x\n", &x, &y);
+    printf("fun: address of p = %x\n", p);
+    sleep(20);
+    return;
 }
 
-int main(int argc, char **argv) {
-    for (int i = 0; i < argc; i++) {
-        printf("argv[%d]: %s\n", i, argv[i]);
-    }
+int main() {
+    int i = 0;
+    int j = 0;
+    int a[10] = {1};
 
-    if (argc < 3) {
-        printf("Missing argument.\n");
-        exit(-1);
-    }
+    static int w = 100;
 
-    printf("Answer: %d\n", to_int(argv[1]) + to_int(argv[2]));
+    int *pt = (int *)malloc(sizeof(int) * 10);
+
+    printf("address of g = %x, k = %x\n", &g, &k);
+    printf("address of i = %x, j = %x, a = %x\n", &i, &j, a);
+    printf("address of w = %x\n", &w);
+    printf("address of pt = %x\n", pt);
+
+    fun();
 
     return 0;
 }

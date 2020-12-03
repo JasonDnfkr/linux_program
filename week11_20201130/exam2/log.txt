@@ -1,0 +1,10 @@
+child: pid = 2298, ppid = 2297, exit_time: Mon Nov 30 17:09:52 2020
+
+child: pid = 2297, ppid = 2295, exit_time: Mon Nov 30 17:09:52 2020
+
+child: pid = 2299, ppid = 2296, exit_time: Mon Nov 30 17:09:52 2020
+
+child: pid = 2296, ppid = 2295, exit_time: Mon Nov 30 17:09:52 2020
+
+parent: pid = 2295, ppid = 30759, exit_time: Mon Nov 30 17:09:52 2020
+

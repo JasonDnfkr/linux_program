@@ -1,18 +1,5 @@
 #include "../ch08.h"
 
-
-// void mysort(int *arr, int n) {
-//     for (int i = n - 1 ; i > 0; i--) {
-//         for (int j = 0; j < i; j++) {
-//             if (arr[j] > arr[j + 1]) {
-//                 int tmp = arr[j];
-//                 arr[j] = arr[j + 1];
-//                 arr[j + 1] = tmp;
-//             }
-//         }
-//     }
-// }
-
 int main() {
     void *fpt = dlopen("./libdlib.so", RTLD_NOW);
     if (!fpt) {
@@ -46,6 +33,5 @@ int main() {
     fprint(arr, MAX);
 
     dlclose(fpt);
-
     return 0;
 }
